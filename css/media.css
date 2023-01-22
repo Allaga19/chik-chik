@@ -12,32 +12,19 @@
 
 /* 576 - 768 px */
 @media screen and (max-width: 768px) {	
-	
+	.header__navigation {
+		display: none;
+	}
 }
 
-/* 320 - 576 px */
-@media screen and (max-width: 576px) {
-	
+/* 320 - 540 px */
+@media screen and (max-width: 540px) {
+	.container {
+		padding: 0 24px;
+	}
+	.main__link {
+		padding: 10px 24px;
+		font-size: 12px;
+	}
 }
 
-/* МОБ. НАСТРОЙКИ
------------------------------------------------------*/
-
-@media only screen and (max-width: 479px) {
-
-}
-
-@media only screen and (min-width: 480px) {
-
-}
-
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 1024px) {
-
-}
-
-@media only screen and (min-width: 1140px) {
-} 

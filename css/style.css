@@ -1,28 +1,10 @@
 /*@charset "utf-8";
 */
 /*=====================================================
-
-* Название проекта
-
+* Название проекта "Chik-chik - Барбершоп"
     Автор: ...
-    Copyright (c) 2015 ...
-
 =====================================================*/
 
-/* БАЗОВЫЕ НАСТРОЙКИ
------------------------------------------------------*/
-/*-------------- FONTS ---------------*/
-/*@font-face {
-  font-family: 'MyWebFont';
-  src: url('webfont.eot');  
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), 
-       url('webfont.woff2') format('woff2'), 
-       url('webfont.woff') format('woff'), 
-       url('webfont.ttf')  format('truetype'), 
-       url('webfont.svg#svgFontName') format('svg'); 
-}*/
-/* ------ Спецификация ------ */
-/* <ОБНУЛЕНИЕ,ОБЩИЕ ПАРАМЕТРЫ> */
 * {
 	padding: 0;
 	margin: 0;
@@ -34,7 +16,6 @@
 	box-sizing: inherit;
 	-moz-box-sizing: inherit;
 	-webkit-box-sizing: inherit;
-	box-sizing: inherit;
 }
 :focus,
 :active {
@@ -61,29 +42,26 @@ body {
 	text-rendering: optimizelegibility;
 }
 body {
-	/* min-width: $minwidth; */
-	min-height: 100vh;
-	font-size: 100%;
-	/* font-family: $fontfamily; */
+	background-color: #241d1c;
+	color: #f6f3e3;
+	min-width: 320px;
+	/* min-height: 100vh; */
+	font-size: 16px;
+	font-weight: 400;
+	font-family: Raleway, sans-serif;
+	line-height: 1.2;
 	-ms-text-size-adjust: 100%;
 	-moz-tezt-size-adjust: 100%;
-	/* &.lock {
-		overflow: hidden;
-		// @media (max-width:$md3+px) {
-		//   width: 100%;
-		//   position: fixed;
-		//   overflow: hidden;}
-	} */
 }
 input,
 select {
 	vertical-align: middle;
 }
-/* input,
+input,
 button,
 textarea {
-	font-family: $fontfamily; 
-} */
+	font-family: Raleway, sans-serif; 
+}
 input::-ms-clear {
 	display: none;
 }
@@ -143,6 +121,7 @@ svg {
 }
 img {
 	max-width: 100%;
+	height: auto;
 	object-fit: cover;
 }
 h1,
@@ -161,6 +140,11 @@ p {
 .visually-hidden {
 	position: fixed;
 	transform: scale(0);
+}
+.container {
+	max-width: 1312px;
+	padding: 0 48px;
+	margin: 0 auto;
 }
 
 /* </ОБНУЛЕНИЕ,ОБЩИЕ ПАРАМЕТРЫ> */
@@ -188,4 +172,60 @@ p {
 
 /* ШАПКА САЙТА
 -----------------------------------------------------*/
+.header {}
+
+.header__navigation {
+	flex-grow: 1;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 54px;
+}
+.header__link {}
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 16px;
+	padding-bottom: 17px;
+	border-bottom: 1px solid #bfbdb2;
+}
+.logo {}
+.logo__img {}
+.logo__text {}
+.navigation {
+}
+.navigation__list {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+.navigation__iten {}
+.navigation__link {
+	color: inherit;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.main {}
+.main__link {
+	display: inline-block;
+	border-radius: 4px;
+	padding: 13px 46px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #241d1c;
+	background: #f6f3e3;
+}
+.main__link:hover:not(:disabled) {
+	color: #241d1c;
+	background: #efe7be;
+}
+.main__link:focus-visible {
+outline: 1px solid #fff;
+}
+.main__link:disabled {
+	opacity: 0.4;
+}
+
 
