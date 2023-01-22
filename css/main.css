@@ -1,0 +1,191 @@
+/*@charset "utf-8";
+*/
+/*=====================================================
+
+* Название проекта
+
+    Автор: ...
+    Copyright (c) 2015 ...
+
+=====================================================*/
+
+/* БАЗОВЫЕ НАСТРОЙКИ
+-----------------------------------------------------*/
+/*-------------- FONTS ---------------*/
+/*@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot');  
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), 
+       url('webfont.woff2') format('woff2'), 
+       url('webfont.woff') format('woff'), 
+       url('webfont.ttf')  format('truetype'), 
+       url('webfont.svg#svgFontName') format('svg'); 
+}*/
+/* ------ Спецификация ------ */
+/* <ОБНУЛЕНИЕ,ОБЩИЕ ПАРАМЕТРЫ> */
+* {
+	padding: 0;
+	margin: 0;
+	bottom: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+:focus,
+:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html {
+	box-sizing: border-box;
+}
+html,
+body {
+	/* // height: 100%; */
+	margin: 0;
+	padding: 0;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizelegibility;
+}
+body {
+	/* min-width: $minwidth; */
+	min-height: 100vh;
+	font-size: 100%;
+	/* font-family: $fontfamily; */
+	-ms-text-size-adjust: 100%;
+	-moz-tezt-size-adjust: 100%;
+	/* &.lock {
+		overflow: hidden;
+		// @media (max-width:$md3+px) {
+		//   width: 100%;
+		//   position: fixed;
+		//   overflow: hidden;}
+	} */
+}
+input,
+select {
+	vertical-align: middle;
+}
+/* input,
+button,
+textarea {
+	font-family: $fontfamily; 
+} */
+input::-ms-clear {
+	display: none;
+}
+input,
+input:hover,
+input:focus,
+input:active,
+button,
+button:hover,
+button:focus,
+button:active {
+	outline: none;
+}
+button {
+	padding: 0;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	bottom: 0;
+}
+a,
+button,
+input {
+	transition: all 0.5s ease;
+}
+a {
+	display: block;
+	text-decoration: none;
+	outline: none; /* убирает обводку при фокусе*/
+	font-size: 100%;
+	color: inherit; /* принимает цвет родителя*/
+}
+a:focus,
+a:active {
+	outline: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover,
+a:active {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+img,
+svg {
+	vertical-align: top;
+}
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+	margin: 0;
+}
+p {
+	margin: 0;
+}
+.visually-hidden {
+	position: fixed;
+	transform: scale(0);
+}
+
+/* </ОБНУЛЕНИЕ,ОБЩИЕ ПАРАМЕТРЫ> */
+.btn {
+  font-family: '';
+	font-size: 13px;
+  border-radius: 0;
+  border-bottom: 4px solid #149d6f;
+  background: #1cb883;
+	color: #fff;
+  padding: 8px;
+	text-align: center;
+	display: block;
+}
+.btn:hover {
+  background: #149d6f;
+  border-bottom: 4px solid #1cb883;
+}
+.btn:active {
+  box-shadow: 0 0 25px rgba(0,0,0,0.2) inset;
+}
+.btn:focus {
+	box-shadow: none;
+}
+
+/* ШАПКА САЙТА
+-----------------------------------------------------*/
+
