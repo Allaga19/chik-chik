@@ -1,0 +1,22 @@
+.main__link {
+	display: inline-block;
+	border-radius: 4px;
+	padding: 13px 46px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #241d1c;
+	background: #f6f3e3;
+}
+
+.main__link:hover:not(:disabled) {
+	color: #241d1c;
+	background: #efe7be;
+}
+
+.main__link:focus-visible {
+	outline: 1px solid #fff;
+}
+
+.main__link:disabled {
+	opacity: 0.4;
+}

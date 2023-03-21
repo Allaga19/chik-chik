@@ -10,6 +10,7 @@
 	margin: 0;
 	bottom: 0;
 }
+
 *,
 *::before,
 *::after {
@@ -17,10 +18,12 @@
 	-moz-box-sizing: inherit;
 	-webkit-box-sizing: inherit;
 }
+
 :focus,
 :active {
 	outline: none;
 }
+
 aside,
 nav,
 footer,
@@ -28,9 +31,11 @@ header,
 section {
 	display: block;
 }
+
 html {
 	box-sizing: border-box;
 }
+
 html,
 body {
 	/* // height: 100%; */
@@ -41,6 +46,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizelegibility;
 }
+
 body {
 	background-color: #241d1c;
 	color: #f6f3e3;
@@ -53,18 +59,22 @@ body {
 	-ms-text-size-adjust: 100%;
 	-moz-tezt-size-adjust: 100%;
 }
+
 input,
 select {
 	vertical-align: middle;
 }
+
 input,
 button,
 textarea {
-	font-family: Raleway, sans-serif; 
+	font-family: Raleway, sans-serif;
 }
+
 input::-ms-clear {
 	display: none;
 }
+
 input,
 input:hover,
 input:focus,
@@ -75,55 +85,68 @@ button:focus,
 button:active {
 	outline: none;
 }
+
 button {
 	padding: 0;
 	cursor: pointer;
 	border: none;
 	background: transparent;
 }
+
 button::-moz-focus-inner {
 	padding: 0;
 	bottom: 0;
 }
+
 a,
 button,
 input {
 	transition: all 0.5s ease;
 }
+
 a {
 	display: block;
 	text-decoration: none;
-	outline: none; /* убирает обводку при фокусе*/
+	outline: none;
+	/* убирает обводку при фокусе*/
 	font-size: 100%;
-	color: inherit; /* принимает цвет родителя*/
+	color: inherit;
+	/* принимает цвет родителя*/
 }
+
 a:focus,
 a:active {
 	outline: none;
 }
+
 a,
 a:visited {
 	text-decoration: none;
 }
+
 a:hover,
 a:active {
 	text-decoration: none;
 }
+
 ul li {
 	list-style: none;
 	display: block;
 	padding: 0;
 	margin: 0;
 }
+
 img,
 svg {
 	vertical-align: top;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 	object-fit: cover;
 }
+
 h1,
 h2,
 h3,
@@ -134,13 +157,16 @@ h6 {
 	font-size: inherit;
 	margin: 0;
 }
+
 p {
 	margin: 0;
 }
-.visually-hidden {
+
+.visualy-hidden {
 	position: fixed;
 	transform: scale(0);
 }
+
 .container {
 	max-width: 1312px;
 	padding: 0 48px;
@@ -149,83 +175,30 @@ p {
 
 /* </ОБНУЛЕНИЕ,ОБЩИЕ ПАРАМЕТРЫ> */
 .btn {
-  font-family: '';
+	font-family: '';
 	font-size: 13px;
-  border-radius: 0;
-  border-bottom: 4px solid #149d6f;
-  background: #1cb883;
+	border-radius: 0;
+	border-bottom: 4px solid #149d6f;
+	background: #1cb883;
 	color: #fff;
-  padding: 8px;
+	padding: 8px;
 	text-align: center;
 	display: block;
 }
+
 .btn:hover {
-  background: #149d6f;
-  border-bottom: 4px solid #1cb883;
+	background: #149d6f;
+	border-bottom: 4px solid #1cb883;
 }
+
 .btn:active {
-  box-shadow: 0 0 25px rgba(0,0,0,0.2) inset;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.2) inset;
 }
+
 .btn:focus {
 	box-shadow: none;
 }
 
-/* ШАПКА САЙТА
------------------------------------------------------*/
-.header {}
 
-.header__navigation {
-	flex-grow: 1;
-	display: flex;
-	justify-content: flex-end;
-	margin-right: 54px;
-}
-.header__link {}
-.header-container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 16px;
-	padding-bottom: 17px;
-	border-bottom: 1px solid #bfbdb2;
-}
-.logo {}
-.logo__img {}
-.logo__text {}
-.navigation {
-}
-.navigation__list {
-	display: flex;
-	align-items: center;
-	gap: 32px;
-}
-.navigation__iten {}
-.navigation__link {
-	color: inherit;
-	text-decoration: none;
-	font-size: 14px;
-	line-height: 1;
-	text-transform: uppercase;
-}
-.main {}
-.main__link {
-	display: inline-block;
-	border-radius: 4px;
-	padding: 13px 46px;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #241d1c;
-	background: #f6f3e3;
-}
-.main__link:hover:not(:disabled) {
-	color: #241d1c;
-	background: #efe7be;
-}
-.main__link:focus-visible {
-outline: 1px solid #fff;
-}
-.main__link:disabled {
-	opacity: 0.4;
-}
 
 
