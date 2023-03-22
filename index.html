@@ -6,7 +6,10 @@
 	<!-- для интернет эксплоер -->
 	<meta http-equiv="X-UA-Compatible" content="IE=adge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" sizes="16x16" href="">
 	<title>Chik-chik - Барбершоп</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
 	<!-- font css -->
 	<link rel="stylesheet" href="css/font.css">
 	<!-- Main css -->
@@ -15,6 +18,7 @@
 	<link rel="stylesheet" href="css/navigation.css">
 	<link rel="stylesheet" href="css/main-link.css">
 	<link rel="stylesheet" href="css/hero.css">
+	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 
@@ -53,7 +57,7 @@
 							<li class="slider__item">
 								<img class="slider__img" src="img/photo-1.jpg" alt="Стильная прическа" />
 							</li>
-							<li class="slider__item">
+							<li class="slider__item slider__item_active">
 								<img class="slider__img" src="img/photo-2.jpg" alt="Стильная прическа" />
 							</li>
 							<li class="slider__item">
@@ -75,8 +79,20 @@
 								<img class="slider__img" src="img/photo-8.jpg" alt="Стильная прическа" />
 							</li>
 						</ul>
-						<button class="slider__arrow slider__arrow-left" aria-label="Предыдущий слайд"></button>
-						<button class="slider__arrow slider__arrow-right" aria-label="Следующий слайд"></button>
+						<button class="slider__arrow slider__arrow-left" aria-label="Предыдущий слайд">
+						<!-- <svg width="65" height="8" viewBox="0 0 65 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M0.646447 4.35355C0.451184 4.15829 0.451184 3.84171 0.646447 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646447 4.35355ZM1 3.5L65 3.5V4.5L1 4.5L1 3.5Z"
+								fill="#F6F3E3" />
+						</svg> -->
+						</button>
+						<button class="slider__arrow slider__arrow-right" aria-label="Следующий слайд">
+							<!-- <svg width="65" height="8" viewBox="0 0 65 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M64.3536 3.64645C64.5488 3.84171 64.5488 4.15829 64.3536 4.35355L61.1716 7.53553C60.9763 7.7308 60.6597 7.7308 60.4645 7.53553C60.2692 7.34027 60.2692 7.02369 60.4645 6.82843L63.2929 4L60.4645 1.17157C60.2692 0.976311 60.2692 0.659728 60.4645 0.464466C60.6597 0.269204 60.9763 0.269204 61.1716 0.464466L64.3536 3.64645ZM0 3.5L64 3.5V4.5L0 4.5L0 3.5Z"
+									fill="#F6F3E3" />
+							</svg> -->
+						</button>
 					</div>
 				</div>
 			</div>
